@@ -9,7 +9,7 @@ ifeq ($(OS), Windows_NT)
 	NOSETESTS := C:/Python27/Scripts/nosetests.exe
 else
 	OSTYPE := $(shell uname)
-	PYTHON := pthon2.7
+	PYTHON := python2.7
 	PYLINT := pylint
 	FLAKE := flake8
 	NOSETESTS := nosetests
