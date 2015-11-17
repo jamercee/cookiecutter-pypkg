@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------------------
+# This file contains a copy of the cookiecutter settings in effect
+# when the project was created.  You can easily reload these settings
+# into python thusly:
+#
+# import ast
+# def reading():
+#     return ast.literal_eval(open('id.txt').read())
+#
+# -----------------------------------------------------------------------------
+{{ cookiecutter|pprint }}

@@ -1,0 +1,12 @@
+{
+    "project_type": "pkg",
+    "project_name": "New Package",
+    "project_slug": "{{ cookiecutter.project_name.replace(' ', '_') }}",
+    "project_short_description": "short package description",
+    "version": "1.0",
+    "release": "1.0.1",
+    "author": "Jim Carroll",
+    "email": "jim@carroll.net",
+    "year" : "2015",
+    "copyright": "Copyright(c) {{ cookiecutter.year }}, Carroll-Net, Inc., All Rights Reserved"
+}
