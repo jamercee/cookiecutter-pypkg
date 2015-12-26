@@ -25,8 +25,6 @@ cwd = os.getcwdu()
 project_root = os.path.dirname(cwd)
 sys.path.insert(0, os.path.join(project_root, 'src'))
 
-import {{ cookiecutter.project_slug }}
-
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
