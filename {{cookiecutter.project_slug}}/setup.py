@@ -7,8 +7,6 @@ from setuptools import setup, find_packages
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('src'))
-import {{cookiecutter.project_slug}}
 
 try:
     # http://bugs.python.org/issue15881#msg170215
@@ -31,7 +29,7 @@ setup(
     # Project meta-data
 
     name = '{{cookiecutter.project_slug}}',
-    version = {{cookiecutter.release}},
+    version = '{{cookiecutter.release}}',
     packages = ['{{cookiecutter.project_slug}}'],
     package_dir = {'': 'src'},
     zip_safe = False,
