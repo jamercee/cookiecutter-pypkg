@@ -31,7 +31,7 @@ setup(
     name = '{{cookiecutter.project_slug}}',
     version = '{{cookiecutter.release}}',
     packages = ['{{cookiecutter.project_slug}}'],
-    package_dir = {'': 'src'},
+    package_dir = {'{{cookiecutter.project_slug}}': 'src'},
     zip_safe = False,
 
     # Testing (assumes you have nose installed)
