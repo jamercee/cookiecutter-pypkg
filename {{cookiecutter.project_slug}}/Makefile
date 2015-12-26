@@ -53,6 +53,7 @@ help:
 	@echo "tests - run unittests"
 	@echo "docs - generate html documentation"
 	@echo "dist - build package"
+	@echo "build - build extensions"
 	@echo "install - install package to site-packages"
 	@echo "viewdocs - generate & view html documentation"
 	@echo "clean - remove all built components"
@@ -73,6 +74,9 @@ viewdocs: docs
 
 dist: tests docs
 	@$(PYTHON) setup.py sdist
+
+build:
+	@$(PYTHON) setup.py build
 
 install: tests docs
 	@$(PYTHON) setup.py install
