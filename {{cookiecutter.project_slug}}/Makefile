@@ -39,7 +39,7 @@ BROWSER := python -c "$$BROWSER_PYSCRIPT"
 
 # ----------------------------------------------------------------------------
 
-SRCS := $(wildcard src/{{cookiecutter.project_slug}}/*.py) $(wildcard tests/*.py)
+SRCS := $(wildcard src/*.py) $(wildcard tests/*.py)
 TGTS := $(patsubst %.py, %.pyc,$(SRCS))
 
 .PHONY: clean clean-build clean-docs clean-pyc comp debug docs help 
@@ -50,8 +50,8 @@ help:
 	@echo "comp - perform static analysis (default target)"
 	@echo "tests - run unittests"
 	@echo "docs - generate html documentation"
-	@echo "dist - build package"
-	@echo "build - build extensions"
+	@echo "dist - build a source distribution"
+	@echo "build - build everything needed to install"
 	@echo "install - install package to site-packages"
 	@echo "viewdocs - generate & view html documentation"
 	@echo "clean - remove all built components"
