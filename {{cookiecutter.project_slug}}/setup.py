@@ -41,7 +41,7 @@ setup(
 
     # Project details
 
-    description = ('{{cookiecutter.project_short_decription}}'),
+    description = ('{{cookiecutter.project_short_description}}'),
     long_description = ''.join(long_description),
     author = '{{cookiecutter.author}}',
     author_email = '{{cookiecutter.email}}',
