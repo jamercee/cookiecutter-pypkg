@@ -33,7 +33,7 @@ BROWSER := python -c "$$BROWSER_PYSCRIPT"
 # ----------------------------------------------------------------------------
 %.pyc:	%.py
 	@echo Check $<
-	@$(PYLINT) -rn --rcfile pylint.rc $<
+	@$(PYLINT) -rn -sn --rcfile pylint.rc $<
 	@$(FLAKE) $<
 	@$(PYTHON) -c 'import py_compile; py_compile.compile("$<")'
 
